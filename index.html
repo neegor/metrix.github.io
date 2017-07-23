@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>metrix.tools</title>
     <meta charset="utf-8">
+    <title>Horizontal navigation dots - fullPage.js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link rel="stylesheet" href="css/kube.css">
-    <link rel="stylesheet" href="css/metrix.css">
-</head>
 
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css" href="css/examples.css"/>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/examples.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third and last page']
+            });
+        });
+    </script>
+
+</head>
 <body>
-<div class="container">
-    <div class="text">
-        <h1>Monitoring for your servers and applications. Simple but awesomely capable.</h1>
-        <hr>
-        <p>Coming soon ( Summer 2017 )</p>
+
+<div id="fullpage">
+
+    <div class="section" id="section0">
+        <div class="intro">
+            <div class="wrap">
+                <h1>Monitoring for your servers and applications. Simple but awesomely capable.</h1>
+                <hr>
+                <p>Coming soon</p>
+            </div>
+        </div>
     </div>
+    <div class="section" id="section1">
+        <div class="intro">
+            <div class="wrap">
+                <h1>We monitor almost everything and even more:</h1>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="intro">
+            <div class="wrap">
+                <h1>7$ for host per month. Regardless of how many services the host is running.</h1>
+                <hr>
+                <p>* First month free of charge</p>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <script type="text/javascript">
