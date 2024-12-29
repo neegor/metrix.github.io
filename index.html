@@ -1,24 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8"/>
+    <title>Metrasensor</title>
+    <meta name="description" content="Metrasensor is a unique predictive AIOps platform that can predict the likelihood of a failure in an enterprise's IT environment in real time.">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="./css/landing.css" rel="stylesheet">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-    <title>Metrasensor | Welcome to AIOps</title>
-    <meta name="description" content="Metrasensor is a unique AIOps platform built around a self-learning neural network. It allows you to manage your IT infrastructure easily, no matter how complex and confusing it may be.">
-    
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metrasensor.com">
     <meta property="og:site_name" content="Metrasensor">
     <meta property="og:title" content="Infrastructure Monitoring as a Service">
     <meta property="og:description" content="View metrics and logs for your apps, tools and services in one place with Metrasensor solutions.">
-    <meta property="og:image" content="https://metrasensor.com/img/sharepic.png">
+    <meta property="og:image" content="https://metrasensor.com/static/img/sharepic.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
@@ -26,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Infrastructure Monitoring as a Service">
     <meta name="twitter:description" content="View metrics and logs for your apps, tools and services in one place with Metrasensor solutions.">
-    <meta name="twitter:image" content="https://metrasensor.com/img/sharepic.png">
+    <meta name="twitter:image" content="https://metrasensor.com/static/img/sharepic.png">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
@@ -47,6 +39,12 @@
     <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
     <meta name="theme-color" content="84C0FC">
 
+    <meta name="viewport" content="width=500, user-scalable=no"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Source+Serif+Pro:wght@400;700;900&display=swap"/>
+    <link rel="stylesheet" href="/css/landing.css"/>
+
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -55,74 +53,66 @@
             "url": "https://metrasensor.com"
         }
     </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
     
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155015705-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-155015705-1');
-    </script>
+        ym(98351086, "init", {
+             clickmap:true,
+             trackLinks:true,
+             accurateTrackBounce:true
+        });
+     </script>
+     <noscript><div><img src="https://mc.yandex.ru/watch/98351086" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+     <!-- /Yandex.Metrika counter -->
 
 </head>
 
 <body>
-    <div class="container">
+<div class="wrapper">
+    <header>
+        <div class="content">
+            <div class="header__top">
+                <div class="logo">
+                    <img src="/img/logo.svg" alt="Metrasensor Logo" class="logo__full">
+                    <img src="/img/logo-mini.svg" alt="Metrasensor Icon" class="logo__mini">
+                    <div class="logo__tip">All Around are Data</div>
+                </div>
+                <a href="#"  class="btn">Get Started with Github</a>
+            </div>
+        </div>
+    </header>
 
-        <nav class="top">
-            <img src="./img/metra_logo.svg" alt="Metrasensor logo">
-        </nav>
+    <main>
+        <div class="content">
+            <h1>Predictive Monitoring for your infrastructure and apps.</h1>
 
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="aiops.html">What is AIOps</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="features.html">Key Features</a>
-            </li>
-        </ul>
-        <br>
-        <h1>Welcome to AIOps</h1>
-        <p class="lead">
-            Dear friends!
-        </p>
-        <p class="lead">
-            We are happy to inform you that in the near future after a long period of development we will finally launch
-            <mark>Metrasensor</mark>.</p>
+            <p>
+                Metrasensor is an AIOps platform based on a predictive self-learning neural network. Capable, given enough data, of
+                predicting events in your infrastructure up to several hours in advance. All you have to do is send the necessary
+                data from your prometheus exporter to us and specify the thresholds. Then we will analyze the data coming to us in
+                real time. And if the thresholds are exceeded or predicted that these values will be exceeded in the near future, we
+                will immediately inform you about it.
+                
+            </p>
+            <p>*We are still in beta release. It's currently free.</p>
+        </div>
+    </main>
 
-        <p class="lead">
-            <strong>Metrasensor is a unique AIOps platform built around a self-learning neural network.</strong> It allows you to manage
-            your IT infrastructure easily, no matter how complex and confusing it may be. Our service can notify you
-            about problems at their onset and you will be notified about failures long before they happen. This allows
-            you to resolve a potential problem before it becomes a significant one impacting your IT infrastructure.</p>
+    <footer>
+        <div class="content">
+            <div>
+                There are some features on our website that may not work without Cookies.
+            </div>
+        </div>
+    </footer>
+</div>
 
-        <p class="lead">
-            We would be extremely grateful for your interest in becoming one of the first users of this innovation 
-            service. All you need to do is sign up for notification of the launch and we will send you a notice on the
-            starting day.</p>
-
-        <p class="lead">
-            If you don't mind sharing, please inform others about us on your social networks.
-        </p>
-
-        <div class="addthis_sharing_toolbox"></div>
-
-        <p class="lead"><b>Thank you so much!</b></p>
-
-        <hr>
-        <p><small>There are some features on our websites that may not work without Cookies. To find out more about
-                the Cookies we use and web tracking please visit our <a href="tos.html">Terms of Use Page</a>.
-            </small>
-        </p>
-
-    </div>
-
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4eafa7fd06e2afec"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </body>
-
 </html>
